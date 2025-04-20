@@ -18,6 +18,7 @@ function App() {
           <Route path='/login' element={<OpenRoute> <LoginPage/> </OpenRoute> }/>
           <Route path='/signup' element={<OpenRoute> <Signup/> </OpenRoute> }/>
           <Route path='/dashboard' element={<PrivateRoute> <Dashboard/> </PrivateRoute> }/>
+          <Route path='*' element={<div> 404 Not Found</div>}/>
         </Routes>
         <Toaster/>
     </div>      
